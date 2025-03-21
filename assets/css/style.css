@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #f9e79f;
+}
+.conteiner {
+  
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: #45b39d;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, label, input {
+    text-align: center;
+    justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.contadores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+.muestrario {
+    display: flex;
+    justify-content: center;
+}
