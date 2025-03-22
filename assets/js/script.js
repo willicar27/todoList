@@ -50,7 +50,7 @@ function renderizarLista(tareas) {
         <tr>
             <td>${tarea.id}</td>
             <td style="text-decoration: ${tarea.completado ? "line-through" : ""};">${tarea.descripcion}</td>
-            <td><button type="checkbox" onclick=completado(${tarea.id})></button></td>
+            <td><input type="checkbox" onclick=completado(${tarea.id})></button></td>
             <td><button onclick=eliminarTarea(${tarea.id})>🚫</button></td>
         </tr>
         </tbody>`
@@ -79,40 +79,3 @@ function eliminarTarea(id) {
         renderizarLista(tareas);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// //creamos la etiqueta lista para agregar la tarea
-// var listaTareas = document.createElement("li");
-// // unimos la lista con el valor del input
-// listaTareas.textContent = tareaNuevaTexto;
-
-// //crear el boton eliminar y el checkbox
-// var botonEliminar = document.querySelector("button");
-// botonEliminar.textContent = "❌"
-// botonEliminar.onclick = function () {listaTareas.remove}
-
-// var checkbox = document.createElement("input");
-// checkbox.type = "checkbox";
-// //establecemos el estado inicial del checkbox
-// checkbox.checked = false;
-
-// //agregamos el checkbox y el boton eliminar a la lista
-
-// listaTareas.appendChild(checkbox);
-// listaTareas.appendChild(botonEliminar);
-
-// //agregar los li a la ul
-// document.getElementById("listadoTareas").appendChild(listaTareas);
-// console.log(listadoTareas);
